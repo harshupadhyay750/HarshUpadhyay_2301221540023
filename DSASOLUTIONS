@@ -1,4 +1,4 @@
-QUESTION TWO SUM
+-->>QUESTION TWO SUM
 
 class Solution {
 
@@ -17,7 +17,7 @@ class Solution {
 
         return new int[]{};
 
-ADD TWO NUMBERS
+-->>ADD TWO NUMBERS
 
 /**
  * Definition for singly-linked list.
@@ -64,7 +64,7 @@ class Solution {
     }
 }
 
-PALINDROME NUMBER
+-->>PALINDROME NUMBER
 
 class Solution {
     public boolean isPalindrome(int x) {
@@ -82,7 +82,7 @@ class Solution {
     }
 }
 
-REVERSE INTEGER
+-->>REVERSE INTEGER
 
 class Solution {
     public int reverse(int x) {
@@ -106,7 +106,7 @@ class Solution {
     }
 }
 
-TAKING INPUT AND PRINT THE ARRAY 
+-->>TAKING INPUT AND PRINT THE ARRAY 
 
 import java.util.Scanner;
 
@@ -129,6 +129,38 @@ public class Main {
         for (int num : myArray) {
             System.out.print(num + " ");
         }
+        scanner.close();
+    }
+}
+
+->>CALCULATE AND SUM OF AN ARRAY 
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+    
+        System.out.print("Enter the number of elements: ");
+        int n = scanner.nextInt();
+
+        int[] myArray = new int[n];
+
+    
+        System.out.println("Enter " + n + " numbers:");
+        for (int i = 0; i < n; i++) {
+            System.out.print("Element " + (i + 1) + ": ");
+            myArray[i] = scanner.nextInt();
+        }
+
+       ]
+        int sum = 0;
+        for (int num : myArray) {
+            sum += num; 
+        }
+  System.out.println("\nThe sum of all elements is: " + sum);
+
         scanner.close();
     }
 }
